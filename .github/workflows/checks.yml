@@ -1,0 +1,17 @@
+name: Documentation checks
+on:
+  pull_request:
+  push:
+    branches: ['codex/**']
+permissions:
+  contents: read
+jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python scripts/check_docs.py
+# Indexing and publication are deliberate steps after reviewed main promotion.
