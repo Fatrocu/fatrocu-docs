@@ -14,4 +14,11 @@ jobs:
         with:
           python-version: '3.13'
       - run: python scripts/check_docs.py
+      - name: Build the actual wiki with the GitHub Pages Jekyll runtime
+        uses: actions/jekyll-build-pages@v1
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wiki-site
+          path: _site/
+          if-no-files-found: error
 # Indexing and publication are deliberate steps after reviewed main promotion.

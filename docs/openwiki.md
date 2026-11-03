@@ -1,25 +1,31 @@
-# Vercel OpenWiki publication
+---
+title: Wiki publication
+nav_order: 11
+permalink: /publication/
+---
 
-The selected platform is [Vercel OpenWiki](https://openwiki.sh/), from [vercel-labs/openwiki](https://github.com/vercel-labs/openwiki). It generates a source-cited wiki from a public GitHub repository. This documentation source needs no second application frontend.
+# Wiki publication
 
-## Publication workflow
+The public wiki is [Fatrocu Wiki on GitHub Pages](https://fatrocu.github.io/fatrocu-docs/). The user selected this publication target on 2026-11-03 after the hosted Vercel OpenWiki submission API returned HTTP 500. OpenWiki indexing did not succeed and is not claimed.
 
-1. Run `python scripts/check_docs.py` and review this candidate.
-2. Wait for the product accuracy gate and review. A human may then promote the reviewed documentation to main. This work merges no PRs and does not bypass that rule.
-3. Run scripts/submit-openwiki.ps1 with -ExpectedMainCommit set to the exact reviewed documentation SHA. -DryRun checks preconditions without submitting.
-4. The script verifies public visibility and exact main revision, then submits the documentation repository URL. It returns the wiki URL and indexing metadata; submission alone is not a successfully published wiki.
-5. Inspect the generated navigation, citations, setup instructions and pending release gates. Use -Refresh only when deliberately requesting regeneration.
+## Source and build
 
-The expected route is https://openwiki.sh/Fatrocu/fatrocu-docs. Do not claim it is published until indexing succeeds.
+The wiki is built from the `codex/publish-docs-wiki` branch of [Fatrocu/fatrocu-docs](https://github.com/Fatrocu/fatrocu-docs). The original guide candidate was promoted to main by the repository owner in [PR #1](https://github.com/Fatrocu/fatrocu-docs/pull/1). Publishing from a separate branch preserves main and requires no agent PR merge.
 
-## Current publication constraint
+GitHub Pages builds Jekyll with Just the Docs pinned to v0.12.0. The theme supplies responsive navigation, local page search, heading anchors and code-copy controls. Relative Markdown links work both in the repository and on the published site. No runtime database, model provider, API credential or analytics integration is configured.
 
-The hosted API accepts a repository URL without a branch/ref argument, and rejects tree/branch URLs. Indexing the old application default branches would describe superseded code. The reviewed guides therefore stay on the documentation candidate branch until a human promotes them. No index request is sent for an empty or outdated main.
+## Update and verify
 
-## Self-hosting
+1. Start a separate worktree/branch for a documentation change and read the workspace instructions.
+2. Update the Markdown sources and retain exact application source citations. Keep beta and unrun benchmark limitations accurate.
+3. Run `python scripts/check_docs.py`. The documentation workflow also builds the actual Jekyll site before publication.
+4. Commit the reviewed source and publish only the intended revision to the Pages source branch. GitHub Pages source is the repository root of `codex/publish-docs-wiki`; it is separate from the default main branch.
+5. Confirm the Pages build/deployment succeeded for that commit. Inspect the home page, all guides, navigation, search results, source links and beta downloads before declaring success.
 
-The upstream app can be deployed separately on Vercel with Neon Postgres, Vercel Blob and an eve agent. These resources and billing credentials are not provisioned automatically. No database URL, Blob token, provider credential or Vercel linkage file belongs in this repository.
+Financial records, ground truth, credentials, models and raw telemetry never belong in this repository or wiki. Documentation publication does not enable the private accuracy benchmark or establish an extraction pass.
 
-Only public source/documentation URLs go to OpenWiki. Source financial documents, labels, private datasets, taxpayer records and telemetry never do.
+## Optional OpenWiki indexing
 
-Upstream references: [official workflow](https://github.com/vercel-labs/openwiki/blob/main/README.md), [submission schema](https://github.com/vercel-labs/openwiki/blob/main/app/api/repositories/route.ts), [repository URL parser](https://github.com/vercel-labs/openwiki/blob/main/lib/github-repo-url.ts).
+The original `scripts/submit-openwiki.ps1` is retained for a future deliberate OpenWiki indexing request. It verifies public visibility and an exact main revision before submitting. The official hosted API accepts a repository URL without a branch/ref argument, so it must not be used to index an unreviewed or outdated default branch. No OpenWiki refresh is required for this GitHub Pages publication.
+
+References: [GitHub Pages branch publication](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site), [pinned theme source](https://github.com/just-the-docs/just-the-docs/blob/v0.12.0/_config.yml), [OpenWiki submission schema](https://github.com/vercel-labs/openwiki/blob/main/app/api/repositories/route.ts).

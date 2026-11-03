@@ -1,3 +1,9 @@
+---
+title: Model setup and hosting
+nav_order: 5
+permalink: /model-server/
+---
+
 # Fatrocu Server 3.1
 
 Rust terminal onboarding and llama.cpp model management for Windows and Linux. No custom /process API is exposed. The managed runtime supplies an HTTP/OpenAI-compatible text/image API.
@@ -45,4 +51,4 @@ The desktop and CLI use their own HTTP client; cURL is only for manual diagnosis
 
 Windows Standard setup was exercised with real verified runtime/model/projector downloads, local startup, health/models checks and a document-free READY request on 2026-11-03. No private extraction benchmark was run. Linux build/runtime verification belongs to the platform CI and release validation; Windows tests alone do not establish a Linux pass. The private e-Archive and OKC accuracy gate remains pending the user's dataset readiness confirmation.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-server/blob/d4aaca0e5977b470308e5fa9a903ac901655df6d/src/main.rs).
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-server/blob/09bd9a9ffa9bf07b58a6a9aad0867c20e7713993/src/main.rs).

@@ -1,3 +1,9 @@
+---
+title: CLI and automation
+nav_order: 4
+permalink: /cli/
+---
+
 # Fatrocu CLI and shared core 3.1
 
 Rust document extraction, human review and local export for Windows and Linux. This repository owns `fatrocu_core`; the native Windows desktop calls the library directly.
@@ -68,4 +74,4 @@ Only approved records can be exported. The saved default format is used when `--
 
 Extraction benchmark: **NOT RUN (dataset pending)**. Do not enable it until the user explicitly confirms readiness and the workspace agent instructions are updated. See [private benchmark format](benchmark-gate.md) and the workspace `benchmarks.md`. Unit and integration tests use synthetic data and do not satisfy the private accuracy gate. No code PR may open until both template gates pass; no PR is merged by this work.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/README.md).
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/f77e87bdb1d12f57f00b4b717f2787d8b3383231/README.md).

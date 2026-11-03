@@ -1,3 +1,9 @@
+---
+title: Schema and human review
+nav_order: 6
+permalink: /schema-review/
+---
+
 # Shared schema and custom templates
 
 Schema version: 1. Rust types in `src/model.rs` are authoritative. Every source field has this representation:
@@ -26,4 +32,4 @@ Deterministic inputs: UBL Invoice XML; HTML data-field attributes and explicit t
 
 No cross-document derivation, taxpayer guessing, tax calculation from absent values, automatic approval or automatic telemetry upload occurs.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/src/model.rs).
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/f77e87bdb1d12f57f00b4b717f2787d8b3383231/src/model.rs).

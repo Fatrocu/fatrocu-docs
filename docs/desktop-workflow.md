@@ -1,3 +1,9 @@
+---
+title: Windows desktop
+nav_order: 3
+permalink: /desktop/
+---
+
 # Fatrocu Desktop 3.1
 
 Native Windows Rust application using egui/eframe 0.37. Document extraction, validation, taxpayer direction, storage, approval and exports are owned by the shared fatrocu_core library in the sibling fatrocu-cli repository. There is no Tauri, web frontend or dependency on a CLI installed on PATH.
@@ -40,4 +46,4 @@ Startup release checks are asynchronous; Settings / About provides Check for upd
 
 Windows native UI validation exercised Upload, source/field review, correction, individual approval, Approved actions and a JSON export using isolated synthetic data. Core tests cover all three output formats. Real Standard model installation and local API connectivity were also exercised. **Extraction benchmark: NOT RUN (dataset pending)**. No feature PR opens until both private template gates pass, and no PR is merged.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/Fatrocu/blob/e99518fa4a301d14c2d08eb68574f865c3baa89c/src/main.rs).
+Source citation: [reviewed implementation](https://github.com/Fatrocu/Fatrocu/blob/9d487eda618e68fd1e4ac69b901e89444a1796df/src/main.rs).

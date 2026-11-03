@@ -1,3 +1,9 @@
+---
+title: Troubleshooting
+nav_order: 9
+permalink: /troubleshooting/
+---
+
 # Troubleshooting
 
 | Symptom | Action |
@@ -16,4 +22,4 @@
 
 Report a redacted reproduction with OS, version/commit, template and model/runtime revision. Do not attach financial documents, taxpayer values, API keys or telemetry. Prefer synthetic reproductions.
 
-Sources: [CLI usage](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/README.md), [server usage](https://github.com/Fatrocu/fatrocu-server/blob/d4aaca0e5977b470308e5fa9a903ac901655df6d/README.md).
+Sources: [CLI usage](https://github.com/Fatrocu/fatrocu-cli/blob/f77e87bdb1d12f57f00b4b717f2787d8b3383231/README.md), [server usage](https://github.com/Fatrocu/fatrocu-server/blob/09bd9a9ffa9bf07b58a6a9aad0867c20e7713993/README.md).

@@ -1,3 +1,9 @@
+---
+title: Benchmark status
+nav_order: 10
+permalink: /benchmark/
+---
+
 # Private extraction benchmark
 
 Hold: **NOT RUN (dataset pending)**. The command is implemented but deliberately disabled until the user's readiness confirmation and instruction updates. Do not put any real documents, labels, manifest or generated accuracy report in Git.
@@ -20,5 +26,5 @@ Each family (e_archive and okc, including Z/UTTS) must independently meet 95% re
 
 Reports contain commit, model ID/revision, schema version, dataset version/manifest hash, field counts, critical hallucination counts and exact-document counts. They contain no source bytes, expected/actual field values, filenames, taxpayer IDs or telemetry. Share only aggregate summaries after the gate actually passes.
 
-Source citation: [reviewed accuracy gate](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/src/benchmark.rs).
+Source citation: [reviewed accuracy gate](https://github.com/Fatrocu/fatrocu-cli/blob/f77e87bdb1d12f57f00b4b717f2787d8b3383231/src/benchmark.rs).
 

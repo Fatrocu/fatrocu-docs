@@ -1,8 +1,8 @@
 # Fatrocu 3.1 documentation
 
-Product setup, document review and agent automation guides for the Rust Fatrocu applications. The selected publication platform is **Vercel OpenWiki (openwiki.sh)**.
+Product setup, document review and agent automation guides for the Rust Fatrocu applications. Read the published **[Fatrocu Wiki on GitHub Pages](https://fatrocu.github.io/fatrocu-docs/)**.
 
-These guides describe candidate branches. The private e-Archive and OKC accuracy gates remain **NOT RUN (dataset pending)**. Telemetry package contents/purge and the release publisher identity remain undecided. This candidate is not a verified stable release.
+These guides describe **3.1.0-beta.1**, an unsigned manual-test preview. The private e-Archive and OKC accuracy gates remain **NOT RUN (dataset pending)**. Telemetry package contents/purge and the release publisher identity remain undecided. This candidate is not a verified stable release.
 
 ## Read the guides
 
@@ -15,10 +15,10 @@ These guides describe candidate branches. The private e-Archive and OKC accuracy
 - [Signed updates](docs/updates.md)
 - [Troubleshooting](docs/troubleshooting.md)
 - [Private accuracy gate](docs/benchmark-gate.md)
-- [Vercel OpenWiki publication](docs/openwiki.md)
+- [Wiki publication](docs/openwiki.md)
 
-Validate with `python scripts/check_docs.py`. This repository contains no financial samples, taxpayer records, ground truth, weights, credentials or telemetry. Only public code/documentation repository URLs may be submitted to OpenWiki.
+Validate with `python scripts/check_docs.py`. This repository contains no financial samples, taxpayer records, ground truth, weights, credentials or telemetry. The static wiki publishes only these public Markdown guides.
 
-The desktop uses the CLI-owned core. The server manages the model runtime. Source citations pin exact reviewed commits: [core/CLI](https://github.com/Fatrocu/fatrocu-cli/tree/6eeb108e90cb3f8512780b2f989736b3e5f10f58), [desktop](https://github.com/Fatrocu/Fatrocu/tree/e99518fa4a301d14c2d08eb68574f865c3baa89c), [server](https://github.com/Fatrocu/fatrocu-server/tree/d4aaca0e5977b470308e5fa9a903ac901655df6d).
+The desktop uses the CLI-owned core. The server manages the model runtime. Source citations pin exact reviewed commits: [core/CLI](https://github.com/Fatrocu/fatrocu-cli/tree/f77e87bdb1d12f57f00b4b717f2787d8b3383231), [desktop](https://github.com/Fatrocu/Fatrocu/tree/9d487eda618e68fd1e4ac69b901e89444a1796df), [server](https://github.com/Fatrocu/fatrocu-server/tree/09bd9a9ffa9bf07b58a6a9aad0867c20e7713993).
 
-Documentation stays on its review branch until a human promotes it. This task merges no PRs. OpenWiki submission checks that the default branch equals the reviewed documentation revision before indexing it.
+The repository owner promoted the original guide candidate to main in PR #1. The GitHub Pages site is published from the separate `codex/publish-docs-wiki` branch after source validation and an actual Jekyll build. Main and PR merge settings are not changed. Just the Docs v0.12.0 provides navigation and local search. The user selected GitHub Pages after the hosted OpenWiki API returned HTTP 500; no successful OpenWiki indexing is claimed.
