@@ -19,6 +19,6 @@ These guides describe candidate branches. The private e-Archive and OKC accuracy
 
 Validate with `python scripts/check_docs.py`. This repository contains no financial samples, taxpayer records, ground truth, weights, credentials or telemetry. Only public code/documentation repository URLs may be submitted to OpenWiki.
 
-The desktop uses the CLI-owned core. The server manages the model runtime. Source citations pin exact reviewed commits: [core/CLI](https://github.com/Fatrocu/fatrocu-cli/tree/90e3a225eaa58c9e83789b71f5b624d0fd63a058), [desktop](https://github.com/Fatrocu/Fatrocu/tree/df4e9546e456a088cec43bf7490f7f57d050e698), [server](https://github.com/Fatrocu/fatrocu-server/tree/7ab0bd24631d6272481a6df1d2458280c80cd0ce).
+The desktop uses the CLI-owned core. The server manages the model runtime. Source citations pin exact reviewed commits: [core/CLI](https://github.com/Fatrocu/fatrocu-cli/tree/6eeb108e90cb3f8512780b2f989736b3e5f10f58), [desktop](https://github.com/Fatrocu/Fatrocu/tree/e99518fa4a301d14c2d08eb68574f865c3baa89c), [server](https://github.com/Fatrocu/fatrocu-server/tree/d4aaca0e5977b470308e5fa9a903ac901655df6d).
 
 Documentation stays on its review branch until a human promotes it. This task merges no PRs. OpenWiki submission checks that the default branch equals the reviewed documentation revision before indexing it.

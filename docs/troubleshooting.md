@@ -16,4 +16,4 @@
 
 Report a redacted reproduction with OS, version/commit, template and model/runtime revision. Do not attach financial documents, taxpayer values, API keys or telemetry. Prefer synthetic reproductions.
 
-Sources: [CLI usage](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/README.md), [server usage](https://github.com/Fatrocu/fatrocu-server/blob/7ab0bd24631d6272481a6df1d2458280c80cd0ce/README.md).
+Sources: [CLI usage](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/README.md), [server usage](https://github.com/Fatrocu/fatrocu-server/blob/d4aaca0e5977b470308e5fa9a903ac901655df6d/README.md).

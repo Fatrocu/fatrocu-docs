@@ -45,5 +45,4 @@ The desktop and CLI use their own HTTP client; cURL is only for manual diagnosis
 
 Windows Standard setup was exercised with real verified runtime/model/projector downloads, local startup, health/models checks and a document-free READY request on 2026-11-03. No private extraction benchmark was run. Linux build/runtime verification belongs to the platform CI and release validation; Windows tests alone do not establish a Linux pass. The private e-Archive and OKC accuracy gate remains pending the user's dataset readiness confirmation.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-server/blob/7ab0bd24631d6272481a6df1d2458280c80cd0ce/src/main.rs).
-
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-server/blob/d4aaca0e5977b470308e5fa9a903ac901655df6d/src/main.rs).

@@ -40,5 +40,4 @@ Startup release checks are asynchronous; Settings / About provides Check for upd
 
 Windows native UI validation exercised Upload, source/field review, correction, individual approval, Approved actions and a JSON export using isolated synthetic data. Core tests cover all three output formats. Real Standard model installation and local API connectivity were also exercised. **Extraction benchmark: NOT RUN (dataset pending)**. No feature PR opens until both private template gates pass, and no PR is merged.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/Fatrocu/blob/df4e9546e456a088cec43bf7490f7f57d050e698/src/main.rs).
-
+Source citation: [reviewed implementation](https://github.com/Fatrocu/Fatrocu/blob/e99518fa4a301d14c2d08eb68574f865c3baa89c/src/main.rs).

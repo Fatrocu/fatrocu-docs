@@ -12,5 +12,4 @@ After manual release publication, GitHub's asset metadata must expose `digest: s
 
 Installation stages verified files away from the running application. The desktop closes only after its signed helper starts from a separate staging directory. The helper retries while the application exits, moves old files into a rollback directory, installs staged files and relaunches. Failed replacements restore previous files; rollback recovery files are preserved if restoring them fails. CLI Windows updates use the same bundled helper; Linux uses signed-archive verification and atomic replacement. Keep the installation writable by its owner; elevation and system-wide installers are not implemented.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/src/update.rs).
-
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/src/update.rs).

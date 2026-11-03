@@ -26,5 +26,4 @@ Deterministic inputs: UBL Invoice XML; HTML data-field attributes and explicit t
 
 No cross-document derivation, taxpayer guessing, tax calculation from absent values, automatic approval or automatic telemetry upload occurs.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/src/model.rs).
-
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/src/model.rs).

@@ -18,4 +18,4 @@ The saved local preference defaults to enabled and can be disabled. Collection a
 
 OpenWiki receives public code/documentation repository URLs only. Financial originals, ground truth, assets/, taxpayer data, credentials and raw telemetry must never be uploaded to a documentation service or public issue/PR.
 
-Sources: [store and recovery](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/src/storage.rs), [transfer authorization](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/src/inference.rs).
+Sources: [store and recovery](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/src/storage.rs), [transfer authorization](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/src/inference.rs).

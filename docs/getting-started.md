@@ -14,4 +14,4 @@ For development, keep Fatrocu, fatrocu-cli and fatrocu-server as sibling checkou
 
 On later sessions, use `fatrocu-server start`. If inference is unavailable, deterministic/manual imports preserve missing values for review. Never guess a blank field.
 
-Sources: [CLI usage](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/README.md), [setup implementation](https://github.com/Fatrocu/fatrocu-server/blob/7ab0bd24631d6272481a6df1d2458280c80cd0ce/src/main.rs).
+Sources: [CLI usage](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/README.md), [setup implementation](https://github.com/Fatrocu/fatrocu-server/blob/d4aaca0e5977b470308e5fa9a903ac901655df6d/src/main.rs).

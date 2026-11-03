@@ -68,5 +68,4 @@ Only approved records can be exported. The saved default format is used when `--
 
 Extraction benchmark: **NOT RUN (dataset pending)**. Do not enable it until the user explicitly confirms readiness and the workspace agent instructions are updated. See [private benchmark format](benchmark-gate.md) and the workspace `benchmarks.md`. Unit and integration tests use synthetic data and do not satisfy the private accuracy gate. No code PR may open until both template gates pass; no PR is merged by this work.
 
-Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/90e3a225eaa58c9e83789b71f5b624d0fd63a058/README.md).
-
+Source citation: [reviewed implementation](https://github.com/Fatrocu/fatrocu-cli/blob/6eeb108e90cb3f8512780b2f989736b3e5f10f58/README.md).
