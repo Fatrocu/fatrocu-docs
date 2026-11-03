@@ -1,0 +1,8 @@
+__pycache__/
+/.env*
+/.vercel/
+/.openwiki/
+/assets/
+/private-data/
+*.gguf
+*.sqlite*
