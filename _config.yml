@@ -5,6 +5,7 @@ baseurl: /fatrocu-docs
 repository: Fatrocu/fatrocu-docs
 remote_theme: just-the-docs/just-the-docs@v0.12.0
 lang: en
+favicon_ico: /media/favicon.svg
 permalink: pretty
 
 plugins:
